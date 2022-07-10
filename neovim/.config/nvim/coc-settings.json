@@ -1,0 +1,55 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": ["css", "javascript", "typescript"],
+  // "diagnostic.virtualText": true,
+  "diagnostic.virtualTextCurrentLineOnly": false,
+  // make vim select first item on completion
+  "suggest.noselect": false,
+  "git.gitlab.hosts": ["gitlab.com"],
+  "explorer.git.enable": false,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.filename.colored.enable": true,
+  "html.autoClosingTags": true,
+  "html.suggest.html5": true,
+  "html.format.wrapAttributes": "auto",
+  "html.format.wrapLineLength": 120,
+  "html.format.preserveNewLines": true,
+  "html.format.endWithNewline": true,
+  "html.format.indentInnerHtml": true,
+  "coc.source.emoji.filetypes": ["markdown", "html", "javascript", "typescript", "json", "sh", "gitcommit"],
+  "coc.source.emoji.enable": false,
+  "coc.source.emoji.shortcut": "~",
+  "languageserver": {
+    "bash": {
+      "command": "bash-language-server",
+      "args": ["start"],
+      "filetypes": ["sh"],
+      "ignoredRootPaths": ["~"]
+    }
+  },
+  "prettier.jsxBracketSameLine": true,
+  "prettier.arrowParens": "avoid",
+  "prettier.trailingComma": "none",
+  "prettier.printWidth": 120,
+  "prettier.htmlWhitespaceSensitivity": "strict",
+  "angular.suggest.includeCompletionsWithSnippetText": true,
+  "explorer.previewAction.onHover": "labeling",
+  "explorer.file.hiddenRules": {
+    "extensions": ["o", "a", "obj", "pyc", "map"],
+    "filenames": ["node_modules"],
+    "patternMatches": ["^\\."],
+    "conditional": [
+      {
+        "hide": ["js", "map"],
+        "if": ["ts"]
+      }
+    ]
+  },
+  "explorer.file.reveal.filter": { "literals": ["node_modules"] },
+  "explorer.file.git.showUntrackedFiles": true,
+  "cSpell.enabledLanguageIds": ["asciidoc", "git-commit", "markdown", "plaintext", "restructuredtext", "text"],
+  "stylua.styluaPath": "/usr/bin/stylua",
+  "Lua.diagnostics.globals": ["vim"],
+  "Lua.hint.enable": true,
+  "Lua.workspace.library": ["/home/connor/.local/share/nvim/site/pack/packer/start"],
+  "Lua.runtime.pathStrict": false
+}
